@@ -6,7 +6,7 @@ on:
 name: Build and Deploy a Container
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT }}
-  SERVICE: webapp
+  SERVICE: webapp1
   REGION: us-central1
   PG_API_URL: ${{ secrets.PG_API_URL }}
 

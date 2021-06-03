@@ -1,5 +1,5 @@
-from os import name
 import os
+from os import name
 import requests
 import json
 from requests.api import request

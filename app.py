@@ -5,7 +5,7 @@ from requests.api import request
 import streamlit as st
 import pandas as pd
 
-url = "https://mgmt590-rest-api-kprv24rveq-uc.a.run.app/"
+url = "{}".format(os.environ.get('PG_API_URL'))
 
 st.title('Amazing Question Answering Thing!')
 

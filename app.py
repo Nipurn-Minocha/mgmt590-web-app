@@ -5,6 +5,7 @@ import json
 from requests.api import request
 import streamlit as st
 import pandas as pd
+import time
 
 url = "{}".format(os.environ.get('PG_API_URL'))
 
@@ -82,5 +83,6 @@ if uploaded_file is not None:
         answer = response.json()['answer']
         row['finalanswer'] = answer
         answer_list.append(answer)
+        time.sleep(0.5)
     df['finalanswer']=answer_list
     st.table(df)      

@@ -34,7 +34,7 @@ if st.title('Add a model'):
         response = requests.request("PUT", newurl, headers=headers, data=payload)
         st.success("Successfully added new model '{}'".format(response.json()[-1]['name']))
 
-if st.button('Delete a model'):
+if st.title('Delete a model'):
     allmodels=url + 'models'
     response=requests.request("GET",allmodels)
     models=response.json()

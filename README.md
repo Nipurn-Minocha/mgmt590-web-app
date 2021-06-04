@@ -42,6 +42,21 @@ You can also upload list of question and context in csv format to get answers on
 
 ---
 
+## Dependencies
+
+The REST API depends on the following:
+
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+- [Transformers](https://huggingface.co/transformers/)
+- [TensorFlow 2.x](https://www.tensorflow.org/)
+- [PyTorch](https://pytorch.org/)
+
+The API has been tested with Python version 3.6.9 and TensorFlow 2.5.0. 
+
+Web App is using Streamlit 
+
+---
+
 # Build App locally
 
 ## Windows Installation
